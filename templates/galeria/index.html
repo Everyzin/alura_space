@@ -1,4 +1,4 @@
-{% extends 'galeria/base.html' %}
+{% extends 'shared/base.html' %}
 {% load static %}
 {% block content %}
             <section class="conteudo">
@@ -9,11 +9,11 @@
                 <section class="tags">
                     <p class="tags__titulo">Busque por tags:</p>
                     <ul class="tags__lista">
-                        <li class="tags__tag"><a href="{% url 'filtrar' 'nebulosa' %}">Nebulosa</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtrar' 'estrela' %}">Estrela</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtrar' 'galáxia' %}">Galáxia</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtrar' 'planeta' %}">Planeta</a></li>
-                        <li class="tags__tag"><a href="{% url 'filtrar' 'satélite' %}">Satélite</a></li>
+                        <a href="{% url 'filtro' 'Nebulosa' %}" class="btn" style="font-size: 18px;"><li class="tags__tag">Nebulosa</li></a>
+                        <a href="{% url 'filtro' 'Estrela' %}" class="btn" style="font-size: 18px;"><li class="tags__tag">Estrela</li></a>
+                        <a href="{% url 'filtro' 'Galáxia' %}" class="btn" style="font-size: 18px;"><li class="tags__tag">Galáxia</li></a>
+                        <a href="{% url 'filtro' 'Planeta' %}" class="btn" style="font-size: 18px;"><li class="tags__tag">Planeta</li></a>
+                        <a href="{% url 'filtro' 'Satélite' %}" class="btn" style="font-size: 18px;"><li class="tags__tag">Satélite</li></a>
                     </ul>
                 </section>
                 <section class="galeria">                    
